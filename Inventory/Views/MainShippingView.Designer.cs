@@ -31,11 +31,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.MainShippingSKULabel = new System.Windows.Forms.Label();
             this.MainShippingQuantityLabel = new System.Windows.Forms.Label();
             this.MainShippingShipButton = new System.Windows.Forms.Button();
             this.MainShippingSKUTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,6 +68,18 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.48659F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1687, 1044);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(873, 20);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(472, 40);
+            this.textBox1.TabIndex = 4;
             // 
             // MainShippingSKULabel
             // 
@@ -105,6 +117,7 @@
             this.MainShippingShipButton.TabIndex = 2;
             this.MainShippingShipButton.Text = "Shipped";
             this.MainShippingShipButton.UseVisualStyleBackColor = true;
+            this.MainShippingShipButton.Click += new System.EventHandler(this.MainShippingShipButton_Click);
             // 
             // MainShippingSKUTextBox
             // 
@@ -117,18 +130,6 @@
             this.MainShippingSKUTextBox.Name = "MainShippingSKUTextBox";
             this.MainShippingSKUTextBox.Size = new System.Drawing.Size(464, 40);
             this.MainShippingSKUTextBox.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(873, 20);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 20, 3, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(472, 40);
-            this.textBox1.TabIndex = 4;
             // 
             // dataGridView1
             // 

@@ -29,10 +29,16 @@ namespace Inventory.Views
 
         public void PopulateView(DBDataObject dataObject)
         {
+            dataGridView1.Rows.Clear();
             foreach (DataRow r in dataObject.data.Rows)
             {
                 dataGridView1.Rows.Add(r["ItemId"].ToString(), r["Name"].ToString(), r["Quantity"].ToString(), r["DateTime"].ToString());
             }
+        }
+
+        private void MainShippingShipButton_Click(object sender, EventArgs e)
+        {
+            presenter.AddShipment(MainShippingSKUTextBox.Text, textBox1.Text);
         }
     }
 }

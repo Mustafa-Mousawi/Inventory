@@ -117,6 +117,7 @@
             this.MainShippingShipButton.TabIndex = 2;
             this.MainShippingShipButton.Text = "Produced";
             this.MainShippingShipButton.UseVisualStyleBackColor = true;
+            this.MainShippingShipButton.Click += new System.EventHandler(this.MainShippingShipButton_Click);
             // 
             // MainShippingSKUTextBox
             // 
